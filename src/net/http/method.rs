@@ -37,4 +37,26 @@ impl HttpMethod {
             _ => None
         }
     }
+
+    /// ## brief
+    /// Convert method it self as str
+    ///
+    /// ## params:
+    /// &self
+    ///
+    /// ## return:
+    /// &'static str
+    pub fn as_str(&self) -> &'static str {
+        match self {
+            HttpMethod::GET => "GET",
+            HttpMethod::POST => "POST",
+            HttpMethod::PUT => "PUT",
+            HttpMethod::DELETE => "DELETE",
+            HttpMethod::PATCH => "PATCH",
+            HttpMethod::HEAD => "HEAD",
+            HttpMethod::OPTIONS => "OPTIONS",
+            HttpMethod::CONNECT => "CONNECT",
+            HttpMethod::TRACE => "TRACE",
+        }
+    }
 }
