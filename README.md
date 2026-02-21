@@ -4,9 +4,9 @@ A GNU/Linux centric micro network framework in rust using stl.
 
 __*IMPORTANT:*__
 ```
-This framework shouldn't using rust async runtime.
+This framework shouldn't use rust async runtime.
 
-Any rust async runtime implementation should be show as example.
+Any rust async runtime implementation should be as an example.
 
 ---
 
